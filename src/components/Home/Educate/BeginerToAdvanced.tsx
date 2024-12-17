@@ -1,10 +1,9 @@
 import { Button } from "@/components/ui/button";
-import Heading from "@/components/ui/heading";
 import Image from "next/image";
 
 export default function BeginerToAdvanced() {
   return (
-    <div className="flex flex-col gap-10 bg-[#0E0E0E] rounded-3xl p-10 h-full">
+    <div className="flex flex-col sm:gap-10 gap-5 bg-[#0E0E0E] rounded-3xl sm:p-10 p-5 h-full">
       <div className="flex flex-col gap-2">
         <div>Beginner</div>
         <div className="flex items-center gap-2 justify-between">
@@ -52,11 +51,11 @@ export default function BeginerToAdvanced() {
       </div>
 
       <div className="flex flex-col gap-5">
-        <Heading className="text-4xl">
+        <div className="sm:text-4xl xs:text-3xl text-2xl">
           Education from
           <br />
           Beginner to Advanced
-        </Heading>
+        </div>
 
         <Button className="w-fit text-lg py-6">Start Challenge</Button>
       </div>

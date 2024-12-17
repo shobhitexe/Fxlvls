@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import Heading from "@/components/ui/heading";
 
 const list = [
   {
@@ -20,8 +19,8 @@ const list = [
 
 export default function LiveWebinars() {
   return (
-    <div className="p-10 rounded-3xl bg-[#0E0E0E] flex flex-col gap-10 h-full">
-      <div className="flex gap-3">
+    <div className="sm:p-10 p-5 rounded-3xl bg-[#0E0E0E] flex flex-col gap-10 h-full">
+      <div className="flex sm:flex-row flex-col gap-3">
         {list.map((item) => (
           <div
             key={item.date}
@@ -41,9 +40,9 @@ export default function LiveWebinars() {
         ))}
       </div>
       <div className="flex flex-col gap-5">
-        <Heading className="text-4xl">
+        <div className="sm:text-4xl xs:text-3xl text-2xl">
           Live Webinars & Trade <br /> Breakdowns
-        </Heading>
+        </div>
 
         <Button className="w-fit text-lg">Start your Challenge Now</Button>
       </div>

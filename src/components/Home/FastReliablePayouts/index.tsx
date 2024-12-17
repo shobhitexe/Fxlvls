@@ -22,15 +22,15 @@ const list = [
 
 export default function FastReliablePayouts() {
   return (
-    <div className="my-20 flex flex-col gap-10">
-      <div className="flex flex-col gap-5 items-center">
+    <div className="my-20 flex flex-col gap-10 px-5">
+      <div className="flex flex-col sm:gap-5 gap-2 items-center text-center px-5">
         <Heading>Fast & Reliable Payouts</Heading>
         <SubHeading>
           All payouts can be requested through Rise which allows to use up to 15
           payment methods
         </SubHeading>
       </div>
-      <div className="flex items-stretch justify-around">
+      <div className="flex flex-wrap items-stretch gap-10 justify-around">
         {list.map((item, idx) => (
           <div
             key={item.title}
@@ -43,7 +43,7 @@ export default function FastReliablePayouts() {
               height={idx === 2 ? 100 : 50}
             />
             <h1 className="font-bold text-2xl mt-2">{item.title}</h1>
-            <p>{item.desc}</p>
+            <p className="max-xs:max-w-xs">{item.desc}</p>
           </div>
         ))}
       </div>

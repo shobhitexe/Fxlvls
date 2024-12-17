@@ -51,43 +51,50 @@ const reviews = [
 
 export default function AboutUsCarousel() {
   return (
-    <Carousel
-      opts={{
-        loop: true,
-        dragFree: true,
-      }}
-      plugins={[
-        Autoplay({
-          delay: 2000,
-        }),
-      ]}
-    >
-      <CarouselContent className="mt-5 z-0">
-        {reviews.map((item) => (
-          <CarouselItem
-            key={item.name}
-            className="flex flex-col gap-5 basis-1/4 text-[#F3F3F3] bg-[#1E1E1F] p-5 rounded-xl ml-5 justify-center"
-          >
-            <Image
-              src={"/images/aboutus/star.png"}
-              alt={"stars"}
-              width={100}
-              height={15}
-            />
-            <p>{item.review}</p>
+    <div className="overflow-hidden">
+      {" "}
+      <Carousel
+        opts={{
+          loop: true,
+          dragFree: true,
+        }}
+        plugins={[
+          Autoplay({
+            delay: 2000,
+          }),
+        ]}
+      >
+        <CarouselContent className="mt-5 z-0 w-full">
+          {reviews.map((item) => (
+            <CarouselItem
+              key={item.name}
+              className="flex flex-col gap-5 min-w-[250px] md:basis-1/4 sm:basis-1/3 basis-1/4 text-[#F3F3F3] bg-[#1E1E1F] p-5 rounded-xl sm:ml-5 ml-2 justify-center"
+            >
+              <Image
+                src={"/images/aboutus/star.png"}
+                alt={"stars"}
+                width={100}
+                height={15}
+              />
+              <p className="sm:text-base text-sm">{item.review}</p>
 
-            <div className="flex gap-2">
-              <div className="w-5 h-5 p-5 rounded-full bg-white"></div>
-              <div>
-                <div className="font-bold">{item.name}</div>
-                <div className="text-[#898990]">{item.title}</div>
+              <div className="flex gap-2">
+                <div className="w-5 h-5 p-5 rounded-full bg-white"></div>
+                <div>
+                  <div className="font-bold sm:text-base text-sm">
+                    {item.name}
+                  </div>
+                  <div className="text-[#898990] sm:text-base text-sm">
+                    {item.title}
+                  </div>
+                </div>
               </div>
-            </div>
-          </CarouselItem>
-        ))}
-      </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
-    </Carousel>
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+        <CarouselPrevious className="hidden" />
+        <CarouselNext className="hidden" />
+      </Carousel>
+    </div>
   );
 }

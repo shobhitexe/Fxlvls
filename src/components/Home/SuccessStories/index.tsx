@@ -11,19 +11,19 @@ import Image from "next/image";
 
 export default function SuccessStories() {
   return (
-    <div className="my-20 bg-guaranteedPayouts p-20 mx-auto flex flex-col items-center justify-center gap-10">
+    <div className="sm:my-20 my-14 bg-guaranteedPayouts md:p-20 xs:p-10 p-5 mx-auto flex flex-col items-center justify-center sm:gap-10 gap-5">
       <Heading>Payouts & Success Stories</Heading>
 
       <Carousel opts={{ loop: true }} className="w-[80%] mx-auto">
         <CarouselContent>
           {Array.from({ length: 10 }).map((_, idx) => (
-            <CarouselItem key={idx} className="basis-1/5">
+            <CarouselItem key={idx} className="sm:basis-1/5 xs:basis-1/4">
               <Image
                 src={`/images/payouts/${idx + 1}.png`}
                 alt={"image"}
                 width={193}
                 height={279}
-                className="h-full"
+                className="h-full mx-auto"
               />
             </CarouselItem>
           ))}
@@ -32,8 +32,10 @@ export default function SuccessStories() {
         <CarouselNext />
       </Carousel>
 
-      <div className="flex items-center gap-5">
-        <Button variant="white">Start Trading</Button>
+      <div className="flex sm:flex-row flex-col items-center sm:gap-5 gap-2">
+        <Button variant="white" className="w-full">
+          Start Trading
+        </Button>
         <Button variant="outline">More Testimonials</Button>
       </div>
     </div>

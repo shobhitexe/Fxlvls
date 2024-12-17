@@ -28,17 +28,20 @@ export default function Educate() {
         </SubHeading>
       </div>
 
-      <div className="grid grid-cols-4 grid-rows-6 gap-4 mt-10">
-        <div className="col-span-2 row-span-6">
+      <div className="grid grid-cols-1 gap-4 mt-10 md:grid-cols-2 lg:grid-cols-4 lg:grid-rows-6">
+        <div className="col-span-1 md:col-span-2 lg:row-span-6">
           <BeginerToAdvanced />
         </div>
-        <div className="col-span-2 row-span-3 col-start-3">
+
+        <div className="col-span-1 md:col-span-1 lg:col-span-2 lg:row-span-3 lg:col-start-3">
           <LiveWebinars />
         </div>
-        <div className="row-span-3 col-start-3 row-start-4">
+
+        <div className="col-span-1 md:col-span-1 lg:row-span-3 lg:col-start-3 lg:row-start-4">
           <Discord />
         </div>
-        <div className="row-span-3 col-start-4 row-start-4">
+
+        <div className="col-span-1 md:col-span-1 lg:row-span-3 lg:col-start-4 lg:row-start-4">
           <MasterTrader />
         </div>
       </div>

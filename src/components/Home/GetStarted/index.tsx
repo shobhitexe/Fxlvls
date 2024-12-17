@@ -21,14 +21,14 @@ const arr = [
 
 export default function GetStarted() {
   return (
-    <div className="w-[90%] mx-auto my-20">
-      <div className="flex flex-col gap-5">
+    <div className="w-[90%] mx-auto sm:my-20 my-14">
+      <div className="flex flex-col sm:gap-5 gap-2">
         <Heading>How to get Started</Heading>
         <SubHeading>
           Simple and easy way to start your investment in cryptocurrency.
         </SubHeading>
       </div>
-      <div className="flex items-center flex-wrap justify-between w-full mt-20">
+      <div className="flex items-center flex-wrap justify-center sm:gap-10 gap-5 w-full sm:mt-20 mt-10 px-5">
         {arr.map((item, idx) => (
           <div
             key={item.title}
@@ -37,11 +37,13 @@ export default function GetStarted() {
               background: item.gradient,
             }}
           >
-            <div className="absolute -top-5 -right-5 bg-numbersGradient text-2xl font-bold p-3 rounded-2xl aspect-square">
+            <div className="absolute -top-5 -right-5 bg-numbersGradient md:text-2xl sm:text-xl text-lg font-bold p-3 rounded-2xl aspect-square">
               0{idx + 1}
             </div>
 
-            <div className="text-2xl font-bold">{item.title}</div>
+            <div className="md:text-2xl sm:text-xl text-lg font-bold">
+              {item.title}
+            </div>
             <div>{item.desc}</div>
           </div>
         ))}

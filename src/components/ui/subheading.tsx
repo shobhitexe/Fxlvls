@@ -9,6 +9,8 @@ export default function SubHeading({
   className?: string;
 }) {
   return (
-    <h1 className={cn(`text-subHeading text-lg`, className)}>{children}</h1>
+    <h1 className={cn(`text-subHeading sm:text-lg text-base`, className)}>
+      {children}
+    </h1>
   );
 }

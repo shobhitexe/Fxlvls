@@ -17,14 +17,14 @@ const Faqs = [
 
 export default function Faq() {
   return (
-    <div className="my-20 w-[90%] mx-auto grid grid-cols-2">
-      <div className="flex flex-col gap-5">
+    <div className="sm:my-20 my-14 w-[90%] mx-auto grid sm:grid-cols-2 grid-cols-1 sm:gap-0 gap-5">
+      <div className="flex flex-col sm:gap-5 gap-3">
         <Heading>
           Frequently Asked
           <br />
           Questions!
         </Heading>
-        <SubHeading>
+        <SubHeading className="md:max-w-sm max-w-xs">
           Didn&apos;t find an answer to your question? Drop us a line here.
         </SubHeading>
 
@@ -36,11 +36,13 @@ export default function Faq() {
         </Button>
       </div>
 
-      <div className="flex flex-col gap-10">
+      <div className="flex flex-col sm:gap-10 gap-5">
         <Accordion type="single" collapsible>
           {Faqs.map((item, idx) => (
             <AccordionItem key={item.que} value={idx.toString()}>
-              <AccordionTrigger>{item.que}</AccordionTrigger>
+              <AccordionTrigger className="text-left">
+                {item.que}
+              </AccordionTrigger>
               <AccordionContent>{item.ans}</AccordionContent>
             </AccordionItem>
           ))}

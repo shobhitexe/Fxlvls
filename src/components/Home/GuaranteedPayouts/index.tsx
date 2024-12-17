@@ -19,10 +19,10 @@ const list = [
 
 export default function GuaranteedPayouts() {
   return (
-    <div className="my-20 bg-guaranteedPayouts p-20 mx-auto flex items-center justify-center gap-10">
+    <div className="my-20 bg-guaranteedPayouts sm:p-20 p-10 mx-auto flex sm:flex-row flex-col items-center justify-center gap-10">
       <div className="flex flex-col gap-5 basis-1/2">
         <Heading>Guaranteed Payouts</Heading>
-        <p>
+        <p className="sm:text-base text-sm">
           <span className="font-bold">
             Are you tired of simulated trading environments designed for you to
             fail?

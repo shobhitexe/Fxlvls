@@ -13,7 +13,7 @@ const links = [
 
 export default function Navbar() {
   return (
-    <header className="sticky top-0 z-20 mx-auto flex w-full items-center justify-between p-5 sm:px-20">
+    <header className="sticky top-0 z-20 mx-auto flex w-full items-center justify-between p-5 md:px-20 sm:px-10">
       <div className="pointer-events-none absolute inset-0  z-[1] h-[20vh] backdrop-blur-[0.0625px] [mask-image:linear-gradient(0deg,transparent_0%,#000_12.5%,#000_25%,transparent_37.5%)]"></div>
       <div className="pointer-events-none absolute inset-0  z-[2] h-[20vh] backdrop-blur-[0.125px] [mask-image:linear-gradient(0deg,transparent_12.5%,#000_25%,#000_37.5%,transparent_50%)]"></div>
       <div className="pointer-events-none absolute inset-0  z-[3] h-[20vh] backdrop-blur-[0.25px] [mask-image:linear-gradient(0deg,transparent_25%,#000_37.5%,#000_50%,transparent_62.5%)]"></div>
@@ -30,7 +30,7 @@ export default function Navbar() {
             height={100}
           />
         </Link>
-        <div className="z-[10] flex items-center gap-5">
+        <div className="z-[10] sm:flex hidden items-center gap-5">
           {links.map((item) => (
             <Link href={item.href} key={item.title}>
               {item.title}

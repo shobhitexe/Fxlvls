@@ -10,9 +10,9 @@ const points = [
 
 export default function JoinFastest() {
   return (
-    <div className="my-20 grid grid-cols-2 items-center w-[90%] mx-auto">
+    <div className="sm:my-28 my-14 grid sm:grid-cols-2 grid-cols-1 sm:gap-0 gap-5 items-center w-[90%] mx-auto">
       <div className="flex flex-col gap-5">
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col sm:gap-5 gap-2">
           <Heading>
             Join the Fastest
             <br />
@@ -24,13 +24,15 @@ export default function JoinFastest() {
           </SubHeading>
         </div>
 
-        <div className="flex items-center gap-5">
+        <div className="flex items-center gap-5 flex-wrap">
           {points.map((item) => (
             <div key={item.title}>
-              <div className="bg-joinTextGradient bg-clip-text text-transparent text-4xl font-semibold">
+              <div className="bg-joinTextGradient bg-clip-text text-transparent md:text-4xl sm:text-3xl text-2xl font-semibold whitespace-nowrap">
                 {item.title}
               </div>
-              <div className="text-xl">{item.sub}</div>
+              <div className="md:text-xl sm:text-lg text-base whitespace-nowrap">
+                {item.sub}
+              </div>
             </div>
           ))}
         </div>

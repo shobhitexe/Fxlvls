@@ -25,10 +25,10 @@ const list = [
 
 export default function Help() {
   return (
-    <div className="my-20 text-center flex flex-col gap-10">
+    <div className="sm:my-20 my-14 text-center flex flex-col sm:gap-10 gap-5">
       <Heading>Need Help?</Heading>
 
-      <div className="flex items-center justify-around">
+      <div className="flex flex-wrap gap-10 items-center justify-around px-5 max-sm:mt-5">
         {list.map((item) => (
           <div
             key={item.title}
@@ -36,9 +36,11 @@ export default function Help() {
           >
             <Image src={item.icon} alt={item.title} width={82} height={82} />
             <div className="flex flex-col gap-2">
-              <div className="font-bold text-xl">{item.title}</div>
-              <div className="text-subHeading">{item.desc}</div>
-              <div className="bg-joinTextGradient bg-clip-text text-transparent font-semibold flex items-center gap-3 cursor-pointer">
+              <div className="font-bold sm:text-xl text-lg">{item.title}</div>
+              <div className="text-subHeading sm:text-base text-sm">
+                {item.desc}
+              </div>
+              <div className="bg-joinTextGradient bg-clip-text text-transparent sm:text-base text-sm font-semibold flex items-center gap-3 cursor-pointer">
                 {item.link.title}{" "}
                 <ChevronRight className="w-4 h-4 text-purple-500" />
               </div>
