@@ -1,10 +1,16 @@
 import {
   AboutUs,
+  Educate,
+  Faq,
   FastReliablePayouts,
   GetStarted,
   GuaranteedPayouts,
+  Help,
   Hero,
+  JoinFastest,
   PayoutTicker,
+  StartChallenge,
+  SuccessStories,
 } from "@/components";
 
 export default function Home() {
@@ -16,6 +22,12 @@ export default function Home() {
       <GuaranteedPayouts />
       <AboutUs />
       <FastReliablePayouts />
+      <JoinFastest />
+      <SuccessStories />
+      <Educate />
+      <Faq />
+      <Help />
+      <StartChallenge />
     </main>
   );
 }
