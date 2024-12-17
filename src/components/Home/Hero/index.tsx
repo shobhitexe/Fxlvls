@@ -14,7 +14,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="grid sm:grid-cols-2 grid-cols-1 md:px-20 px-10 mt-10 mb-24 max-sm:mt-20"
+      className="grid sm:grid-cols-2 grid-cols-1 md:px-20 px-10 mt-10 mb-24 max-sm:mt-16"
     >
       <div className="flex flex-col justify-center max-sm:items-center sm:gap-5 gap-4">
         <div className="flex flex-col md:text-7xl xs:text-6xl text-5xl max-sm:text-center">

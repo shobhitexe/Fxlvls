@@ -2,8 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { Button } from "../ui/button";
+import MobileNav from "./MobileNav";
 
-const links = [
+export const links = [
   { title: "Programs", href: "" },
   { title: "Pricing", href: "" },
   { title: "Trading Rules", href: "" },
@@ -36,7 +37,12 @@ export default function Navbar() {
               {item.title}
             </Link>
           ))}
+
           <Button>Log in</Button>
+        </div>
+
+        <div className="sm:hidden flex">
+          <MobileNav />
         </div>
       </div>
     </header>

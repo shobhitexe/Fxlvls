@@ -30,7 +30,7 @@ const payouts = [
 export default function PayoutTicker() {
   return (
     <section className="bg-[#B653F4] flex items-center w-full py-3">
-      <div className="flex items-center -rotate-[0.5deg] bg-payoutTickerBg w-full py-3 md:gap-5 gap-0 justify-around overflow-x-auto">
+      <div className="flex sm:items-center items-start px-3 -rotate-[0.5deg] bg-payoutTickerBg w-full py-3 md:gap-5 gap-0 justify-around overflow-x-auto">
         {payouts.map((item, idx) => (
           <div
             key={idx}
