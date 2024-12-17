@@ -143,7 +143,7 @@ export default function Footer() {
       </div>
 
       <div className="flex flex-col gap-4 border-t border-white/10 py-4 sm:flex sm:items-center justify-center">
-        <span className="text-sm tracking-tight text-neutral-500 dark:text-neutral-400 sm:text-center">
+        <span className="text-sm text-center tracking-tight text-neutral-500 dark:text-neutral-400 sm:text-center">
           Copyright © {new Date().getFullYear()}{" "}
           <Link href="/" className="cursor-pointer">
             Levels Technologies LLC.
@@ -151,7 +151,7 @@ export default function Footer() {
           All Rights Reserved.
         </span>
 
-        <div className="flex items-center gap-5">
+        <div className="flex items-center justify-center gap-5">
           {footerSocials.map((item) => (
             <Image
               key={item.name}
