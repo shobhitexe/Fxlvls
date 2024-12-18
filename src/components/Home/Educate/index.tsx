@@ -7,7 +7,7 @@ import Discord from "./Discord";
 
 export default function Educate() {
   return (
-    <div className="my-20 w-[90%] mx-auto">
+    <div className="my-20 w-[80%] mx-auto">
       <div className="flex flex-col gap-5">
         <Heading>
           Educate & Learn with the <br />

@@ -22,7 +22,7 @@ const list = [
 
 export default function FastReliablePayouts() {
   return (
-    <div className="my-20 flex flex-col gap-10 px-5">
+    <div className="my-20 flex flex-col gap-10 sm:px-40">
       <div className="flex flex-col sm:gap-5 gap-2 items-center text-center px-5">
         <Heading>Fast & Reliable Payouts</Heading>
         <SubHeading>

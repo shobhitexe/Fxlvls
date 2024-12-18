@@ -21,7 +21,7 @@ const arr = [
 
 export default function GetStarted() {
   return (
-    <div className="w-[90%] mx-auto sm:my-20 my-14">
+    <div className="w-[80%] mx-auto sm:my-20 my-14">
       <div className="flex flex-col sm:gap-5 gap-2">
         <Heading>How to get Started</Heading>
         <SubHeading>
@@ -32,7 +32,7 @@ export default function GetStarted() {
         {arr.map((item, idx) => (
           <div
             key={item.title}
-            className="flex flex-col gap-2 max-w-md mx-auto text-subHeading p-10 rounded-2xl relative"
+            className="flex flex-col gap-2 max-w-sm mx-auto text-subHeading p-10 rounded-2xl relative"
             style={{
               background: item.gradient,
             }}
