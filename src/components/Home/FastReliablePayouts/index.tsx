@@ -22,7 +22,7 @@ const list = [
 
 export default function FastReliablePayouts() {
   return (
-    <div className="my-20 flex flex-col sm:gap-10 gap-5 sm:px-40">
+    <div className="my-20 flex flex-col sm:gap-10 gap-5 sm:px-40 px-2">
       <div className="flex flex-col sm:gap-5 gap-2 items-center sm:text-center px-5">
         <Heading>Fast & Reliable Payouts</Heading>
         <SubHeading>
@@ -41,7 +41,7 @@ export default function FastReliablePayouts() {
               alt={item.title}
               width={idx === 2 ? 100 : 50}
               height={idx === 2 ? 100 : 50}
-              className={`${idx === 2 && "sm:w-[100px] w-[80px]"}`}
+              className={`${idx === 2 && "sm:w-[100px] w-[60px]"}`}
             />
             <div className="max-sm:text-left">
               <h1 className="font-bold sm:text-2xl text-xl sm:mt-2">
