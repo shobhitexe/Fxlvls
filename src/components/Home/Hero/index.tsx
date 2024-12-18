@@ -14,7 +14,13 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="grid sm:grid-cols-2 grid-cols-1 md:px-40 sm:px-20 px-10 mt-10 mb-24 max-sm:mt-16"
+      className="grid sm:grid-cols-2 grid-cols-1 md:px-40 sm:px-20 px-10 pt-10 mb-24 max-sm:pt-16"
+      style={{
+        backgroundImage: "url('/images/hero/bg.avif')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
     >
       <div className="flex flex-col justify-center max-sm:items-center sm:gap-5 gap-4">
         <div className="flex flex-col md:text-7xl xs:text-6xl text-5xl max-sm:text-center">

@@ -11,7 +11,7 @@ import Image from "next/image";
 
 export default function SuccessStories() {
   return (
-    <div className="sm:my-20 my-14 bg-guaranteedPayouts md:p-20 xs:p-10 p-5 mx-auto flex flex-col items-center justify-center sm:gap-10 gap-5">
+    <div className="sm:my-20 my-14 bg-guaranteedPayouts md:p-20 xs:p-10 p-7 mx-auto flex flex-col items-center justify-center sm:gap-10 gap-5">
       <Heading>Payouts & Success Stories</Heading>
 
       <Carousel opts={{ loop: true }} className="sm:w-[80%] w-[85%] mx-auto">

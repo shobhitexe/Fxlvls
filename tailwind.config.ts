@@ -18,6 +18,8 @@ export default {
         xl: "1700px",
       },
       backgroundImage: {
+        HeroBg: "bg-[url('/images/hero/bg.avif')]",
+
         defaultButtonBg:
           "linear-gradient(101.43deg, #7200D1 15.22%, #A12FFF 84.78%)",
         payoutTickerBg: "linear-gradient(90deg, #6900C1 0%, #7400A2 113.83%)",
