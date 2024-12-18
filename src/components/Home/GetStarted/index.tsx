@@ -28,7 +28,7 @@ export default function GetStarted() {
           Simple and easy way to start your investment in cryptocurrency.
         </SubHeading>
       </div>
-      <div className="flex items-center flex-wrap justify-center sm:gap-10 gap-7 w-full sm:mt-20 mt-10 px-5">
+      <div className="flex items-center flex-wrap justify-center sm:gap-10 gap-7 w-full sm:mt-20 mt-10 spx-5">
         {arr.map((item, idx) => (
           <div
             key={item.title}
