@@ -22,28 +22,35 @@ const list = [
 
 export default function FastReliablePayouts() {
   return (
-    <div className="my-20 flex flex-col gap-10 sm:px-40">
-      <div className="flex flex-col sm:gap-5 gap-2 items-center text-center px-5">
+    <div className="my-20 flex flex-col sm:gap-10 gap-5 sm:px-40">
+      <div className="flex flex-col sm:gap-5 gap-2 items-center sm:text-center px-5">
         <Heading>Fast & Reliable Payouts</Heading>
         <SubHeading>
           All payouts can be requested through Rise which allows to use up to 15
           payment methods
         </SubHeading>
       </div>
-      <div className="flex flex-wrap items-stretch gap-10 justify-around">
+      <div className="flex flex-wrap items-stretch sm:gap-10 gap-5 justify-around px-5">
         {list.map((item, idx) => (
           <div
             key={item.title}
-            className="flex flex-col gap-3 items-center justify-center text-center max-w-sm"
+            className="flex sm:flex-col flex-row sm:gap-3 gap-5 items-center justify-center text-center rounded-lg max-w-sm w-full p-5 max-sm:bg-[#0E0E0E]"
           >
             <Image
               src={item.img}
               alt={item.title}
               width={idx === 2 ? 100 : 50}
               height={idx === 2 ? 100 : 50}
+              className={`${idx === 2 && "sm:w-[100px] w-[80px]"}`}
             />
-            <h1 className="font-bold text-2xl mt-2">{item.title}</h1>
-            <p className="max-xs:max-w-xs">{item.desc}</p>
+            <div className="max-sm:text-left">
+              <h1 className="font-bold sm:text-2xl text-xl sm:mt-2">
+                {item.title}
+              </h1>
+              <p className="max-xs:max-w-60 sm:text-base text-sm">
+                {item.desc}
+              </p>
+            </div>
           </div>
         ))}
       </div>

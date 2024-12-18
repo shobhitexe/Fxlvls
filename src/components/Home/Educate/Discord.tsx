@@ -15,7 +15,7 @@ export default function Discord() {
           Live Webinars & Trade <br /> Breakdowns
         </div>
 
-        <div className="w-fit text-lg underline">Watch Now</div>
+        <div className="w-fit sm:text-lg text-base underline">Watch Now</div>
       </div>
     </div>
   );

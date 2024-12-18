@@ -57,7 +57,9 @@ export default function BeginerToAdvanced() {
           Beginner to Advanced
         </div>
 
-        <Button className="w-fit text-lg py-6">Start Challenge</Button>
+        <Button className="w-fit sm:text-lg text-base py-6">
+          Start Challenge
+        </Button>
       </div>
     </div>
   );

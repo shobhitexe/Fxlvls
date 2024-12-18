@@ -20,7 +20,7 @@ const list = [
 export default function GuaranteedPayouts() {
   return (
     <div className="my-20 bg-guaranteedPayouts sm:py-20 py-10 mx-auto">
-      <div className="flex sm:flex-row flex-col items-center justify-center gap-10 w-[80%] mx-auto">
+      <div className="flex sm:flex-row flex-col items-center justify-center gap-10 sm:w-[80%] w-[85%] mx-auto">
         <div className="flex flex-col gap-5 basis-1/2">
           <Heading>Guaranteed Payouts</Heading>
           <p className="sm:text-base text-sm">

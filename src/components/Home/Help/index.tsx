@@ -26,9 +26,9 @@ const list = [
 export default function Help() {
   return (
     <div className="sm:my-20 my-14 text-center flex flex-col sm:gap-10 gap-5 sm:px-20">
-      <Heading>Need Help?</Heading>
+      <Heading className="max-sm:text-left px-7">Need Help?</Heading>
 
-      <div className="flex flex-wrap gap-10 items-center justify-around px-5 max-sm:mt-5">
+      <div className="flex flex-wrap sm:gap-10 gap-5 items-center justify-around px-5 max-sm:mt-3">
         {list.map((item) => (
           <div
             key={item.title}

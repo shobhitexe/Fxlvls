@@ -44,7 +44,9 @@ export default function LiveWebinars() {
           Live Webinars & Trade <br /> Breakdowns
         </div>
 
-        <Button className="w-fit text-lg">Start your Challenge Now</Button>
+        <Button className="w-fit sm:text-lg text-base">
+          Start your Challenge Now
+        </Button>
       </div>
     </div>
   );
