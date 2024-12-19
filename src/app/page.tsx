@@ -1,5 +1,6 @@
 import {
   AboutUs,
+  ChallengeConfig,
   Educate,
   Faq,
   FastReliablePayouts,
@@ -19,6 +20,7 @@ export default function Home() {
       <Hero />
       <PayoutTicker />
       <GetStarted />
+      <ChallengeConfig />
       <GuaranteedPayouts />
       <AboutUs />
       <FastReliablePayouts />

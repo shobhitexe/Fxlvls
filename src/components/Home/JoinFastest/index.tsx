@@ -10,7 +10,7 @@ const points = [
 
 export default function JoinFastest() {
   return (
-    <div className="sm:my-28 my-14 grid sm:grid-cols-2 grid-cols-1 sm:gap-0 gap-5 items-center sm:w-[80%] w-[85%] mx-auto">
+    <div className="sm:my-28 my-14 grid sm:grid-cols-2 grid-cols-1 sm:gap-0 gap-5 items-center sm:w-[80%] w-[90%] mx-auto">
       <div className="flex flex-col gap-5">
         <div className="flex flex-col sm:gap-5 gap-2">
           <Heading>

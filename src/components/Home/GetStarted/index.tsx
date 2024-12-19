@@ -21,7 +21,7 @@ const arr = [
 
 export default function GetStarted() {
   return (
-    <div className="sm:w-[80%] w-[85%] mx-auto sm:my-20 my-14">
+    <div className="sm:w-[80%] w-[90%] mx-auto sm:my-20 my-14">
       <div className="flex flex-col sm:gap-5 gap-2">
         <Heading>How to get Started</Heading>
         <SubHeading>

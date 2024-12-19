@@ -23,8 +23,8 @@ const list = [
 export default function FastReliablePayouts() {
   return (
     <div className="my-20 flex flex-col sm:gap-10 gap-5 sm:px-40 px-2">
-      <div className="flex flex-col sm:gap-5 gap-2 items-center sm:text-center px-5">
-        <Heading>Fast & Reliable Payouts</Heading>
+      <div className="flex flex-col sm:gap-5 gap-2 sm:items-center sm:text-center px-3">
+        <Heading className="text-left">Fast & Reliable Payouts</Heading>
         <SubHeading>
           All payouts can be requested through Rise which allows to use up to 15
           payment methods

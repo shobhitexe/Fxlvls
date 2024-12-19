@@ -1,5 +1,6 @@
 import Footer from "./Footer";
 import AboutUs from "./Home/AboutUs";
+import ChallengeConfig from "./Home/Challenge";
 import Educate from "./Home/Educate";
 import Faq from "./Home/Faq";
 import FastReliablePayouts from "./Home/FastReliablePayouts";
@@ -28,4 +29,5 @@ export {
   Help,
   StartChallenge,
   Footer,
+  ChallengeConfig,
 };

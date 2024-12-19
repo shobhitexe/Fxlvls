@@ -1,6 +1,7 @@
 import Image from "next/image";
 
-import { Button } from "@/components/ui/button";
+// import { Button } from "@/components/ui/button";
+import InteractiveHoverButton from "@/components/ui/hover-button";
 
 const paymentMethods = [
   { src: "/images/hero/Visa.png", alt: "visa" },
@@ -14,7 +15,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="grid sm:grid-cols-2 grid-cols-1 md:px-40 sm:px-20 px-10 pt-10 mb-24 max-sm:pt-16"
+      className="grid sm:grid-cols-2 grid-cols-1 md:px-40 sm:px-20 px-10 mb-24 pt-10 max-sm:pt-16"
       style={{
         backgroundImage: "url('/images/hero/bg.avif')",
         backgroundSize: "cover",
@@ -31,10 +32,17 @@ export default function Hero() {
           Get qualified by a private equity fund <br />
           Manage up to $2,000,000!
         </p>
-
+        {/* 
         <Button className="w-fit text-lg xs:h-14 h-10 md:px-20 xs:px-16 px-14">
           Start Trading
-        </Button>
+        </Button> */}
+
+        <InteractiveHoverButton
+          text="Start Trading"
+          className="w-fit text-lg xs:h-14 h-10 md:px-20 xs:px-16 px-14"
+        >
+          Start Trading
+        </InteractiveHoverButton>
 
         <div className="flex items-center max-sm:justify-center gap-1 max-sm:mt-2">
           {paymentMethods.map((item) => (

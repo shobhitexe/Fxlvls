@@ -14,7 +14,7 @@ export const links = [
 
 export default function Navbar() {
   return (
-    <header className="sticky top-0 z-20 mx-auto flex w-full items-center justify-between p-5 md:px-40 sm:px-20 px-7">
+    <header className="sticky top-0 z-20 mx-auto flex w-full items-center justify-between p-5 md:px-40 sm:px-20 px-5">
       <div className="pointer-events-none absolute inset-0  z-[1] h-[20vh] backdrop-blur-[0.0625px] [mask-image:linear-gradient(0deg,transparent_0%,#000_12.5%,#000_25%,transparent_37.5%)]"></div>
       <div className="pointer-events-none absolute inset-0  z-[2] h-[20vh] backdrop-blur-[0.125px] [mask-image:linear-gradient(0deg,transparent_12.5%,#000_25%,#000_37.5%,transparent_50%)]"></div>
       <div className="pointer-events-none absolute inset-0  z-[3] h-[20vh] backdrop-blur-[0.25px] [mask-image:linear-gradient(0deg,transparent_25%,#000_37.5%,#000_50%,transparent_62.5%)]"></div>
@@ -27,14 +27,15 @@ export default function Navbar() {
           <Image
             src={"/images/navbar/logo.png"}
             alt={"logo"}
-            width={150}
-            height={25}
+            width={160}
+            height={26}
           />
         </Link>
         <div className="z-[10] md:flex hidden items-center gap-5">
           {links.map((item) => (
-            <Link href={item.href} key={item.title}>
+            <Link href={item.href} key={item.title} className="group">
               {item.title}
+              <div className="group-hover:w-full w-0 mx-auto h-px duration-500 bg-[#A12FFF]" />
             </Link>
           ))}
 
