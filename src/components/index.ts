@@ -1,3 +1,4 @@
+import ContactUsForm from "./ContactUs/Form";
 import Footer from "./Footer";
 import AboutUs from "./Home/AboutUs";
 import ChallengeConfig from "./Home/Challenge";
@@ -13,6 +14,8 @@ import PayoutTicker from "./Home/PayoutTicker";
 import StartChallenge from "./Home/StartChallenge";
 import SuccessStories from "./Home/SuccessStories";
 import Navbar from "./Navbar";
+import PageHeader from "./PageHeader";
+import StayInformed from "./StayInformed";
 
 export {
   Navbar,
@@ -30,4 +33,7 @@ export {
   StartChallenge,
   Footer,
   ChallengeConfig,
+  PageHeader,
+  StayInformed,
+  ContactUsForm,
 };

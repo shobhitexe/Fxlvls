@@ -9,7 +9,7 @@ export const links = [
   { title: "Pricing", href: "" },
   { title: "Trading Rules", href: "" },
   { title: "FAQ", href: "" },
-  { title: "Affiliates", href: "" },
+  { title: "Contact Us", href: "/contact-us" },
 ];
 
 export default function Navbar() {
