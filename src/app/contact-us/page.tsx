@@ -33,7 +33,7 @@ export default function page() {
       </PageHeader>
 
       <div className="bg-[#14081F] pb-10">
-        <div className="flex md:flex-row flex-col flex-wrap items-center gap-5 justify-center relative sm:-top-14 -top-7">
+        <div className="flex md:flex-row flex-col flex-wrap items-center gap-4 justify-center relative sm:-top-14 -top-7">
           {contactMethods.map((item) => (
             <div
               key={item.title}
