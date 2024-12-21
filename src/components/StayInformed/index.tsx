@@ -20,7 +20,7 @@ export default function StayInformed() {
             Never Miss an Levels Update!
           </Heading>
 
-          <div className="flex flex-col items-center sm:gap-5 gap-3">
+          <div className="flex sm:flex-row flex-col items-center sm:gap-5 gap-3">
             <input
               placeholder="Your Email Address"
               className="h-10 bg-transparent border border-white max-w-xs w-full placeholder-white px-2"

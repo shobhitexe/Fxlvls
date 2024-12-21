@@ -1,4 +1,6 @@
 import ContactUsForm from "./ContactUs/Form";
+import { Faqs, Rules } from "./Faqs/constants";
+import RightSideFaq from "./Faqs/RightSideFaq";
 import Footer from "./Footer";
 import AboutUs from "./Home/AboutUs";
 import ChallengeConfig from "./Home/Challenge";
@@ -36,4 +38,7 @@ export {
   PageHeader,
   StayInformed,
   ContactUsForm,
+  Faqs,
+  RightSideFaq,
+  Rules,
 };

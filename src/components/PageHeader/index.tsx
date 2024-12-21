@@ -1,15 +1,18 @@
 import { ReactNode } from "react";
 import Heading from "../ui/heading";
 import SubHeading from "../ui/subheading";
+import { cn } from "@/lib/utils";
 
 export default function PageHeader({
   title,
   subtitle,
   children,
+  className,
 }: {
   title: string;
   subtitle: string;
   children?: ReactNode;
+  className?: string;
 }) {
   return (
     <div
@@ -18,7 +21,12 @@ export default function PageHeader({
         background: "radial-gradient(at top, #9E07FB -100%, #000000 60%)",
       }}
     >
-      <Heading className={`md:text-7xl sm:text-6xl text-5xl font-semibold`}>
+      <Heading
+        className={cn(
+          `md:text-7xl sm:text-6xl text-5xl font-semibold text-center`,
+          className
+        )}
+      >
         {" "}
         {title}
       </Heading>
