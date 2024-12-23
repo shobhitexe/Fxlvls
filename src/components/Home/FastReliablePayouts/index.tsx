@@ -42,7 +42,7 @@ export default function FastReliablePayouts() {
               width={idx === 2 ? 100 : 50}
               height={idx === 2 ? 100 : 50}
               className={`${
-                idx === 2 ? "sm:w-[100px] w-[50px]" : "sm:w-[5px] w-[45px]"
+                idx === 2 ? "sm:w-[100px] w-[50px]" : "sm:w-[50px] w-[45px]"
               }`}
             />
             <div className="max-sm:text-left">

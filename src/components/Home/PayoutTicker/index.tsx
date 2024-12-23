@@ -30,7 +30,7 @@ const payouts = [
 
 export default function PayoutTicker() {
   return (
-    <section className="bg-[#B653F4] flex items-center justify-center w-full sm:py-3 py-1">
+    <section className="bg-[#B653F4] flex items-center justify-center w-full sm:py-2 py-1">
       <HorizontalTicker duration={30000}>
         <div className="flex sm:items-center overflow-auto animate-tickesr items-start px-3 -rotate-[0.5deg]s bg-[#B653F4] bg-payoutTickerBg w-full py-3 md:gap-5 gap-0 justify-around">
           {payouts.map((item, idx) => (

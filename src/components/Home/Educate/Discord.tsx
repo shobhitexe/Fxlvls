@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Discord() {
   return (
-    <div className="bg-[#0E0E0E] rounded-3xl sm:p-10 p-5 flex flex-col gap-5 items-center justify-center">
+    <div className="bg-[#0E0E0E] rounded-3xl p-10 flex flex-col gap-5 sm:items-center sm:justify-center">
       <Image
         src={"/images/educate/discord.png"}
         alt={"discord"}

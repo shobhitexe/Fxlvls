@@ -2,6 +2,7 @@ import Heading from "@/components/ui/heading";
 import SubHeading from "@/components/ui/subheading";
 import Image from "next/image";
 import AboutUsCarousel from "./Carousel";
+import { Button } from "@/components/ui/button";
 
 export default function AboutUs() {
   return (
@@ -26,6 +27,10 @@ export default function AboutUs() {
       </div>
 
       <AboutUsCarousel />
+
+      <Button className="sm:mt-10 mt-5 sm:text-lg text-base px-10 h-12">
+        Start Trading
+      </Button>
     </div>
   );
 }
